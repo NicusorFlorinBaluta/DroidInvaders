@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "936270217317",
+    "firebase_url": "https://droidinvaders.firebaseio.com",
+    "project_id": "droidinvaders",
+    "storage_bucket": "droidinvaders.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936270217317:android:e4322b0ae4b82d68",
+        "android_client_info": {
+          "package_name": "com.rau.droidinvaders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936270217317-3b0ua5phspecvebpkvl75vcnr3i7r69c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rau.droidinvaders",
+            "certificate_hash": "649A50E1DC5FADB30C199D0C649C724853A8442E"
+          }
+        },
+        {
+          "client_id": "936270217317-n4lhtun0lnss7m9vpp53tg0va4vafbih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNt2uGRDEtD3DgQH0CKQcbAya8zTmaM5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936270217317-n4lhtun0lnss7m9vpp53tg0va4vafbih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

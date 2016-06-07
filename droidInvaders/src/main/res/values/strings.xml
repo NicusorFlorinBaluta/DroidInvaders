@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">DroidInvaders</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">DroidInvaders</string>
+    <string name="play">Play</string>
+    <string name="community">Community</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="GMG">Shop</string>
+    <string name="newgame">New Game</string>
+    <string name="continuegame">Continue</string>
+    <string name="sounds">Music</string>
+    <string name="soundon">Music On</string>
+    <string name="soundoff">Music Off</string>
+    <string name="resetgame">Reset</string>
+    <string name="achievements">Achievements</string>
+    <string name="leaderboards">Leaderboards</string>
+    <string name="helptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis magna porta magna dictum viverra. Quisque non placerat est. Aliquam erat volutpat. Mauris egestas mi at leo mattis eu mattis quam vestibulum. Nulla nisi arcu, scelerisque pharetra malesuada eu, posuere id diam. Mauris non lorem ipsum. Aliquam vitae nibh ante, sed cursus magna. Donec euismod, sem vitae mattis tincidunt, sapien lacus placerat libero, vel dictum lacus enim et nisl.Morbi dapibus faucibus quam, in vestibulum lacus suscipit at. Nullam ut est sed augue iaculis dictum. Vivamus eget lacus metus. Nam id orci malesuada lorem aliquet dapibus placerat venenatis lacus. Donec interdum cursus augue, ut condimentum quam pharetra et. Aliquam in felis metus, sit amet lobortis arcu. Donec interdum nibh ut purus feugiat gravida. Phasellus tincidunt ullamcorper diam, eu scelerisque tortor ornare id.</string>
+	<string name="wavecleared">WAVE CLEARED</string>
+	<string name="gamecompleted">GAME COMPLETED !!!</string>
+	<string name="gameover">GAME OVER</string>
+	<string name="signing_in">Signing in with Google</string>
+    <string name="signing_out">Signing out</string>
+    <string name="game_title">Button Clicker 2000!</string>
+    <string name="game_blurb">A sample game that tests your ability to click a button. Can you click faster than your friends? Only one way to find out! To play this game with friends, you must sign in with Google.</string>
+    <string name="single_player">Single Player</string>
+    <string name="single_player_explanation">Get some practice!</string>
+    <string name="quick_game">Quick game</string>
+    <string name="invite_players">Invite friends</string>
+    <string name="see_invitations">See invitations</string>
+    <string name="quick_game_explanation">Challenge a random opponent.</string>
+    <string name="invite_players_explanation">Invite friends to play a game.</string>
+    <string name="see_invitations_explanation">See who is inviting you right now.</string>
+    <string name="inv_popup_text">Incoming invitation!</string>
+    <string name="accept_popup_invite">Accept!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="instructions">Click the button as fast as you can!</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="your_score">Your score:</string>
+    <string name="error">Error</string>
+    <string name="game_problem">An error occurred while starting the game. Please try again.</string>
+    <string name="click_me">Click me!</string>
+    <string name="is_inviting_you">is challenging you to a game!</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9214820429648282/8455984456</string>
+    <string name="ads_app_id">ca-app-pub-9214820429648282~6979251255</string>
+
+</resources>
