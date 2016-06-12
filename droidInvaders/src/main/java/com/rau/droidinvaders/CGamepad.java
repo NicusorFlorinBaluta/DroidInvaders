@@ -17,8 +17,6 @@ public class CGamepad extends CEntity{
 	Bitmap fireBm;
 
 	public static boolean fireBool=false;
-	static final int BTN_SIZE = 60;
-	static final int BTN_OFFSET = 20;
 	static final int DIR_NONE = 0;
 	static final int DIR_N = 1;
 	static final int DIR_NE = 2;
@@ -31,7 +29,6 @@ public class CGamepad extends CEntity{
 	private int xi, yi;
 	private int dir = 0;
 	int multitouch=0;
-	int screenh;
 	int offsetX ;
 	int offsetY;
 	int pointX ;
@@ -59,10 +56,6 @@ public class CGamepad extends CEntity{
 		canvas.drawBitmap(bigCircleBm,null, bigCircleRect, mPaint);
 		canvas.drawBitmap(smallCircleBm, null, smallCircleRect, mPaint);
 		canvas.drawBitmap(fireBm, null, fireRect, mPaint);
-	}
-	void update ()
-	{
-
 	}
 
 	public void onTouch (MotionEvent event)
@@ -164,10 +157,7 @@ public class CGamepad extends CEntity{
 					}
 				}
 				//returneaza true daca buttonul de tragere este apasat
-				if(fireRect.contains((int)event.getX(), (int)event.getY()))
-					fireBool=true;
-				else
-					fireBool=false;
+				fireBool = fireRect.contains((int) event.getX(), (int) event.getY());
 				break;
 
 				//reseteaza joystickul daca miscarea este in afara lui
@@ -289,10 +279,7 @@ public class CGamepad extends CEntity{
 					}
 				}
 				//daca buttonul de tragere este apasat returneaza true
-				if(fireRect.contains((int)event.getX(0), (int)event.getY(0))||fireRect.contains((int)event.getX(1), (int)event.getY(1)))
-					fireBool=true;
-				else
-					fireBool=false;
+				fireBool = fireRect.contains((int) event.getX(0), (int) event.getY(0)) || fireRect.contains((int) event.getX(1), (int) event.getY(1));
 				break;
 				//reseteaza joystickul daca degetul a fost ridicat de pe ecran
 			case MotionEvent.ACTION_POINTER_UP:

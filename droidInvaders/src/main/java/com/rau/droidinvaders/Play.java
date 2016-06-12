@@ -33,7 +33,7 @@ public class Play extends Thread{
 		lastUpdateTime = System.currentTimeMillis();
 		while (running) 
 		{
-			if(mPaused==false)
+			if(!mPaused)
 			{
 				canvas = null;
 

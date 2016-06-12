@@ -6,8 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Rect;
 
 public class Background {
-
-	Bitmap bmp;
 	Bitmap scaled;
 	private int width;
 	private int height;

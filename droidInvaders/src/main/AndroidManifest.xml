@@ -34,63 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-                  <!--<activity-->
-            <!--android:name=".InterstitialActivity"-->
-            <!--android:configChanges="keyboardHidden|orientation"-->
-            <!--android:screenOrientation="portrait" -->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
-        <!-- -->
-        <!--<activity-->
-            <!--android:name="com.ama.ads.AMAAdMobInterstitialActivity"-->
-            <!--android:configChanges="keyboardHidden|orientation"-->
-            <!--android:screenOrientation="portrait" -->
-            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
-
-        <!-- AMA AdMob Mediation; Mobclix Required Parameter -->
-        <!--<meta-data-->
-            <!--android:name="com.mobclix.APPLICATION_ID"-->
-            <!--android:value="2033F248-8CE5-4E92-AAE6-5D70C9B9B1FC" />-->
-
-        <!-- AMA AdMob Mediation; AdMob Activity -->
-        <!--<activity-->
-            <!--android:name="com.google.ads.AdActivity"-->
-            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />-->
-
-        <!-- AMA AdMob Mediation; Revmob activity -->
-        <!--<activity-->
-            <!--android:name="com.revmob.ads.fullscreen.FullscreenActivity"-->
-            <!--android:configChanges="keyboardHidden|orientation" />-->
-
-        <!--&lt;!&ndash; AMA AdMob Mediation; Tapjoy activity &ndash;&gt;-->
-        <!--<activity-->
-            <!--android:name="com.tapjoy.TJCOffersWebView"-->
-            <!--android:configChanges="keyboardHidden|orientation"-->
-            <!--android:screenOrientation="portrait" />-->
-
-        <!-- AMA AdMob Mediation; SponsorPay activity -->
-        <!--<activity-->
-            <!--android:name="com.sponsorpay.sdk.android.publisher.OfferWallActivity"-->
-            <!--android:configChanges="keyboardHidden|orientation"-->
-            <!--android:screenOrientation="portrait" />-->
-
-        <!-- AMA AdMob Mediation; Chartboost -->
-        <!--<activity-->
-            <!--android:name="com.chartboost.sdk.CBDialogActivity"-->
-            <!--android:configChanges="orientation|keyboard|keyboardHidden"-->
-            <!--android:launchMode="singleTop"-->
-            <!--android:theme="@android:style/Theme.Translucent"-->
-            <!--android:windowSoftInputMode="adjustResize" />-->
-        
-        <!-- AMA AdMob Mediation; AppFlood Interstitial -->
-        <!--<activity-->
-			<!--android:name="com.appflood.AFFullScreenActivity"-->
-			<!--android:configChanges="keyboardHidden|orientation" -->
-			<!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
-			<!--android:launchMode="singleTask" />-->
-        
-        <activity android:name=".GMGActivity">
-        </activity>
 
         
     </application>

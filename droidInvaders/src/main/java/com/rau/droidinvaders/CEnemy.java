@@ -11,10 +11,8 @@ import android.graphics.Rect;
 
 public class CEnemy extends CEntity {
 
-	int tempbounds;
 	long fireRate;
-	long lastUpdateTime = 0;
-	
+
 	ArrayList<Point> mPath;
 	ArrayList<Integer> mPathTime, mPathInitTime;
 	int mPathCurrentPos;
@@ -23,15 +21,14 @@ public class CEnemy extends CEntity {
 	int EnemyHitPoints;
 	Bitmap enemyBm;
 	boolean mPathLoop;
-	boolean noNewPoints=true;
-	
+
 	Paint mPaint;
 	CEnemy (Rect bounds, Bitmap enemyBitmap, int EnemyHP)
 	{
 		super (bounds);
-		mPath = new ArrayList<Point>();
-		mPathTime = new ArrayList<Integer>();
-		mPathInitTime = new ArrayList<Integer>();
+		mPath = new ArrayList<>();
+		mPathTime = new ArrayList<>();
+		mPathInitTime = new ArrayList<>();
 		mPathUpdate = 50;
 		mPathCurrentPos = 0;
 		mPathCurrentTime = 0;
@@ -67,12 +64,7 @@ public class CEnemy extends CEntity {
 		mPathInitTime.add(dt);
 	}
 	
-	@Deprecated
-	void setPathUpdate(int dt)
-	{
-		mPathUpdate = dt;
-	}
-	//desenarea navei 
+	//desenarea navei
 	void paint (Canvas canvas)
 	{
 		canvas.drawBitmap(enemyBm,null, bounds, mPaint);
@@ -85,7 +77,7 @@ public class CEnemy extends CEntity {
 			
 			int offsetX, offsetY;
 			
-			if (dt >= mPathTime.get(mPathCurrentPos).intValue())
+			if (dt >= mPathTime.get(mPathCurrentPos))
 			{
 				offsetX = (mPath.get(mPathCurrentPos).x - bounds.left);
 				offsetY = (mPath.get(mPathCurrentPos).y - bounds.top);
@@ -93,14 +85,14 @@ public class CEnemy extends CEntity {
 			}
 			else
 			{
-				offsetX = (mPath.get(mPathCurrentPos).x - bounds.left) * (int)dt / mPathTime.get(mPathCurrentPos).intValue();
-				offsetY = (mPath.get(mPathCurrentPos).y - bounds.top) * (int)dt / mPathTime.get(mPathCurrentPos).intValue();
-				mPathTime.set(mPathCurrentPos, mPathTime.get(mPathCurrentPos).intValue() - (int)dt);
+				offsetX = (mPath.get(mPathCurrentPos).x - bounds.left) * (int)dt / mPathTime.get(mPathCurrentPos);
+				offsetY = (mPath.get(mPathCurrentPos).y - bounds.top) * (int)dt / mPathTime.get(mPathCurrentPos);
+				mPathTime.set(mPathCurrentPos, mPathTime.get(mPathCurrentPos) - (int)dt);
 			}
 			
 			bounds.offset(offsetX, offsetY);
 				
-			if (mPathTime.get(mPathCurrentPos).intValue() <= 0)
+			if (mPathTime.get(mPathCurrentPos) <= 0)
 			{
 				mPathCurrentPos++;
 			}
@@ -120,16 +112,10 @@ public class CEnemy extends CEntity {
 	}
 	
 	//verfica daca a ajuns la sfarsitul pathului
-	public boolean finishedPath ()
-	{
-		if (mPathLoop)
-			return false;
-		
-		if (mPathCurrentPos >= mPath.size())
-			return true;
-		else
-			return false;
+	public boolean finishedPath () {
+		return !mPathLoop && mPathCurrentPos >= mPath.size();
 	}
+
 	//seteaza cat de des trage nava
 	public void setFireRate (long fireRate)
 	{

@@ -3,7 +3,6 @@ package com.rau.droidinvaders;
 public class GameConstants 
 {
 	//pozitia navelor inamice pe ecran pentru fiecare wave
-	final static int NB_WAVES = 1000;
 
 	final static int W0_ROWS = 5;
 	final static int W0_COLS = 5;

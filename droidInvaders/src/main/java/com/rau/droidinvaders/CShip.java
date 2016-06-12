@@ -4,18 +4,14 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.Rect;
 
 public class CShip extends CEntity 
 {
 	float mAxisX = 0.0f;
 	float mAxisY = 0.0f;
-	float mAxisZ = 0.0f;
-	float mAxisRZ = 0.0f;
 	float mX =  0.0f;
 	float mY =  0.0f;
-	Path ship;
 	long fireRate;
 	int height;
 	int width;

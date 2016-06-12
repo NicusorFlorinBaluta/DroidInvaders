@@ -12,7 +12,6 @@ public class Animation {
 	long animationTime = 0;
 	int frameCount = 4;
 	boolean running;
-	int x, y;
 	Rect bmpSrc;
 	Bitmap img;
 
